@@ -10,7 +10,7 @@ int main()
 	while (2)
 	{
 		float sum = 0;
-		cout << "\nEnter the choice:\n";
+		cout << "\nEnter the choice:\n"; // choice input
 		cout << "1.Update Fat rate and Bonus\n";
 		cout << "2.Skip and proceed to Calculations\n";
 		cin >> choice;
@@ -34,7 +34,7 @@ int main()
 				for (i = 0; i < n; i++)
 				{
 					cin >> wt[i] >> fat[i];
-					sum += (fat[i] * fr + fp) * wt[i];
+					sum += (fat[i] * fr + fp) * wt[i]; // updating fat rate and bonus
 				}
 				cout << "Total amount for " << n << " days is Rs " << sum << "/-\n\n\n";
 				break;
